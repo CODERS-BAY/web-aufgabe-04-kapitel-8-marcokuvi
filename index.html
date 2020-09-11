@@ -16,9 +16,11 @@
             </h1>
         </header>
         <nav>
+            
             <a href="index.html">Home</a>
             <a href="info.html">Info</a>
             <a href="kontakt.html">Contact</a>
+        
         </nav>
     </div>
     <main>
@@ -35,11 +37,11 @@
                 <div class="slideshow-container">
 
                     <div class="mySlides1">
-                        <img src="pics/loewe.jpg" >
+                        <img src="pics/loewe.jpg">
                     </div>
 
                     <div class="mySlides1">
-                        <img src="pics/baer.jpg" >
+                        <img src="pics/baer.jpg">
                     </div>
 
                     <div class="mySlides1">
@@ -47,7 +49,7 @@
                     </div>
 
                     <div class="mySlides1">
-                        <img src="pics/elefant.jpg" >
+                        <img src="pics/elefant.jpg">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -65,7 +67,7 @@
                 <div class="slideshow-container">
 
                     <div class="mySlides2">
-                        <img src="pics/spinnen.jpg" >
+                        <img src="pics/spinnen.jpg">
                     </div>
 
                     <div class="mySlides2">
@@ -73,11 +75,11 @@
                     </div>
 
                     <div class="mySlides2">
-                        <img src="pics/kaefer.jpg" >
+                        <img src="pics/kaefer.jpg">
                     </div>
 
                     <div class="mySlides2">
-                        <img src="pics/tausend.jpg" >
+                        <img src="pics/tausend.jpg">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -95,19 +97,19 @@
                 <div class="slideshow-container">
 
                     <div class="mySlides3">
-                        <img src="pics/hai.jpg" >
+                        <img src="pics/hai.jpg">
                     </div>
 
                     <div class="mySlides3">
-                        <img src="pics/octopus.jpg" >
+                        <img src="pics/octopus.jpg">
                     </div>
 
                     <div class="mySlides3">
-                        <img src="pics/goldfisch.jfif" >
+                        <img src="pics/goldfisch.jfif">
                     </div>
 
                     <div class="mySlides3">
-                        <img src="pics/aal.jpg" >
+                        <img src="pics/aal.jpg">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
@@ -126,19 +128,19 @@
                 <div class="slideshow-container">
 
                     <div class="mySlides4">
-                        <img src="pics/adler.jpg" >
+                        <img src="pics/adler.jpg">
                     </div>
 
                     <div class="mySlides4">
-                        <img src="pics/strauss.jpg" >
+                        <img src="pics/strauss.jpg">
                     </div>
 
                     <div class="mySlides4">
-                        <img src="pics/pinguine.jpg" >
+                        <img src="pics/pinguine.jpg">
                     </div>
 
                     <div class="mySlides4">
-                        <img src="pics/papagei.jpg" >
+                        <img src="pics/papagei.jpg">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
@@ -151,9 +153,9 @@
 
     <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ozYo3w8TyMk" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    
+
 
     <script>
         var slideIndex = [1, 1, 1, 1];
@@ -176,6 +178,15 @@
                 x[i].style.display = "none";
             }
             x[slideIndex[no] - 1].style.display = "block";
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     </script>
 
